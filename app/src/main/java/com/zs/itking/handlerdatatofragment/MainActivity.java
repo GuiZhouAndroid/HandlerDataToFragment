@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
      */
     private void initView() {
         // 1.填充Fragment到FrameLayout控件中
-        getFragmentManager().beginTransaction().replace(R.id.layout_fragment, HandlerFragment.getInstance()).commit();
+        getSupportFragmentManager().beginTransaction().replace(R.id.layout_fragment, HandlerFragment.getInstance()).commit();
         // 2.获取输入框控件
         edit = (EditText) findViewById(R.id.edit);
     }

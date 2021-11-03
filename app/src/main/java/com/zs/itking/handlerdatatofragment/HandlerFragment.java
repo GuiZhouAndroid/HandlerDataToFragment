@@ -1,7 +1,6 @@
 package com.zs.itking.handlerdatatofragment;
 
 import android.app.Activity;
-import android.app.Fragment;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.LayoutInflater;
@@ -10,6 +9,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
 
 /**
  * created by on 2021/11/3
