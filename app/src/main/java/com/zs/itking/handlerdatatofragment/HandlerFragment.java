@@ -35,6 +35,7 @@ public class HandlerFragment extends Fragment {
             }
         };
     };
+    private String titles;
 
     public HandlerFragment() {
     }
@@ -48,6 +49,8 @@ public class HandlerFragment extends Fragment {
     public void onAttach(Activity activity) {
         super.onAttach(activity);
         MainActivity mActivity = (MainActivity) activity;
+        //通过强转成宿主activity，就可以获取到传递过来的数据
+        titles = mActivity.getTitles();
         mActivity.setHandler(mHandler);
     }
 
@@ -61,6 +64,7 @@ public class HandlerFragment extends Fragment {
 
     private void initView(View view) {
         text = (TextView) view.findViewById(R.id.text);
+        text.setText(titles);
     }
 }
 

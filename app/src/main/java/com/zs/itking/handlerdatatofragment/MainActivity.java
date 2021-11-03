@@ -40,6 +40,11 @@ public class MainActivity extends AppCompatActivity {
         mHandler = handler;
     }
 
+    public String getTitles(){
+        return "hello";
+    }
+
+
     /**
      * 点击开始传递数据
      *
